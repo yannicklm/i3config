@@ -15,4 +15,3 @@ else:
     index = (index - 1 + len(names)) % (len(names))
     choice = names[index]
 i3.command("move workspace", choice)
-utils.sort_worskpaces()

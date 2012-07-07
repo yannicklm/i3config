@@ -17,4 +17,3 @@ else:
     choice = names[index]
 
 i3.command("workspace", choice)
-utils.sort_worskpaces()

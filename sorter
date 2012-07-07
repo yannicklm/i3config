@@ -7,7 +7,6 @@ import utils
 
 
 def on_workspace(event, data, subsrciption):
-    if event['change'] == 'focus':
-        utils.sort_worskpaces()
+    utils.sort_worskpaces()
 
 subsrciption = i3.Subscription(on_workspace, 'workspace')
