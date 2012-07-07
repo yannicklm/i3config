@@ -1,0 +1,13 @@
+#!/usr/bin/python2
+
+import sys
+import i3
+
+import utils
+
+
+def on_workspace(event, data, subsrciption):
+    if event['change'] == 'focus':
+        utils.sort_worskpaces()
+
+subsrciption = i3.Subscription(on_workspace, 'workspace')

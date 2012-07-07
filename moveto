@@ -1,0 +1,18 @@
+#!/usr/bin/python2
+
+import sys
+import i3
+
+import utils
+
+names = utils.get_workspace_names()
+if len(sys.argv) == 1:
+    choice = utils.run_dmenu(names, "-p", "moveto: ")
+    if not choice in names:
+        choice = utils.insert_new_workspace(names, choice)
+else:
+    index = int(sys.argv[1])
+    index = (index - 1 + len(names)) % (len(names))
+    choice = names[index]
+i3.command("move workspace", choice)
+utils.sort_worskpaces()
