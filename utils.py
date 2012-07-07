@@ -37,6 +37,8 @@ def insert_new_workspace(workspaces, name):
 
 
 def sort_worskpaces():
+    names = get_workspace_names()
+    names = names.sort(key=lambda x: x[3:])
     for i, name in enumerate(get_workspace_names()):
         w_name = name[3:]
         new_name = "%i: %s"  % (i+1, w_name)
