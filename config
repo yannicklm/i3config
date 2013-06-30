@@ -105,6 +105,8 @@ bindsym $mod+Shift+t exec ~/.i3/moveto
 bindsym $mod+b workspace prev
 bindsym $mod+n workspace next
 
+bindsym $mod+Shift+s  exec ~/.i3/sort
+
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
@@ -150,4 +152,3 @@ assign [class="Firefox"] 2: www
 
 exec i3-msg 'rename workspace 1 to "1: main"'
 exec firefox
-exec ~/.i3/sorter
