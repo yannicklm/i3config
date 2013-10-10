@@ -18,13 +18,13 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec lxterminal
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec dmenu_run
+bindsym $mod+r exec dmenu_run
 
 # change focus
 bindsym $mod+h focus left
@@ -110,14 +110,13 @@ bindsym $mod+Shift+s  exec ~/.i3/sort
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
-bindsym $mod+Shift+r reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 #bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+q exit
 
 # resize window (you can also use the mouse for that)
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+r "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
