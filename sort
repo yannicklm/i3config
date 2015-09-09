@@ -1,4 +1,0 @@
-#!/usr/bin/python2
-
-import utils
-utils.sort_worskpaces()
