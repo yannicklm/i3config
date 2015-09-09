@@ -1,0 +1,3 @@
+setxkbmap us dvorak-intl
+feh --full-screen --bg-fill ~/pics/abyss.png
+xrandr --output DisplayPort-0 --auto --output DVI-0 --auto --left-of DisplayPort-0
